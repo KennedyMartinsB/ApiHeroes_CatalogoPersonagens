@@ -2,6 +2,7 @@
 // npm install --save-dev prisma dotenv
 import "dotenv/config";
 import { defineConfig, env } from "prisma/config";
+import { PrismaMariaDb } from "@prisma/adapter-mariadb";
 
 const databaseUrl = `mysql://${encodeURIComponent(env("DATABASE_USER"))}:${encodeURIComponent(env("DATABASE_PASSWORD"))}@${env("DATABASE_HOST")}:${env("DATABASE_PORT")}/${encodeURIComponent(env("DATABASE_NAME"))}`;
 

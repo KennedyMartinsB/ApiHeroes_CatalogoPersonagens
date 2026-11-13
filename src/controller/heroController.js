@@ -1,4 +1,4 @@
-import Hero from "../model/Hero";
+import Hero from "../model/Hero.js";
 
 class HeroController {
     constructor() {
@@ -21,14 +21,19 @@ class HeroController {
     }
 
     update = async (req, res) => {
-        const hero = await this.hero.update(req.id, req.body);
+        const hero = await this.hero.update(req.params.id, req.body);
         res.status(201).json(hero);
     }
 
     delete = async (req, res) => {
-        const hero = await this.hero.delete(req.id);
+        const hero = await this.hero.delete(req.params.id);
         res.status(200).json(hero);
     }
 }
 
 export default new HeroController();
+
+
+// Rodar projeto npm run dev
+
+// Prisma rodar com npx prisma studio

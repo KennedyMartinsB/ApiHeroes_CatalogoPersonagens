@@ -32,8 +32,3 @@ class HeroController {
 }
 
 export default new HeroController();
-
-
-// Rodar projeto npm run dev
-
-// Prisma rodar com npx prisma studio

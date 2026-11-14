@@ -52,14 +52,3 @@ export default class Villain {
         return villain;
     }
 }
-
-
-// model Villain {
-//   id Int @id @default(autoincrement())
-//   nome String @db.VarChar(100)
-//   poderes String @db.Text
-//   categoria String @db.VarChar(50)
-//   idade Int
-//   criadoEm DateTime @default(now())
-//   atualizadoEm DateTime @updatedAt
-// }

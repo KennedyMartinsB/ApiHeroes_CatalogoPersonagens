@@ -9,4 +9,4 @@ heroRouter.post('/', HeroController.create);
 heroRouter.put('/:id', HeroController.update);
 heroRouter.delete('/:id', HeroController.delete);
 
-export default heroRouter
+export default heroRouter;

@@ -7,7 +7,7 @@ class VillainController {
 
     all = async (req, res) => {
         const villains = await this.villain.all();
-        res.status(200).json(villains);
+        res.render('villains', { villains });
     }
 
     show = async (req, res) => {

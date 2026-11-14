@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src', 'view'));
 
 app.use(express.json())
-// Rotas Publicas
+
 app.use('/', publicRoutes)
 
 // Rotas do crud

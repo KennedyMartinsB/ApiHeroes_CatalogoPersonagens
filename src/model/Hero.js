@@ -2,13 +2,11 @@ import { prisma } from "../config/prisma.js";
 
 export default class Hero {
 
-    // getList
     all() {
         const heroes = prisma.hero.findMany();
         return heroes;
     }
 
-    // findById
     show(id) {
         const hero = prisma.hero.findUnique({
             where: {
@@ -55,13 +53,3 @@ export default class Hero {
     }
 
 }
-
-// model Hero {
-//   id Int @id @default(autoincrement())
-//   nome String @db.VarChar(100)
-//   poderes String @db.Text
-//   categoria String @db.VarChar(50)
-//   idade Int
-//   criadoEm DateTime @default(now())
-//   atualizadoEm DateTime @updatedAt
-// }

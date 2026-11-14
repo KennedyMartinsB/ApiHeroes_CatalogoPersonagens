@@ -12,8 +12,8 @@ Aplicação Node.js (Express + Prisma 7 + MariaDB) para gerenciar Heróis e Vil�
 ## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/KennedyMartinsB/TCC-Senac.git
-cd TCC-Senac
+git clone https://github.com/KennedyMartinsB/ApiHeroes_CatalogoPersonagens.git
+cd ApiHeroes_CatalogoPersonagens
 ```
 
 ## 2. Instalar as dependências

@@ -22,7 +22,7 @@ model Hero {
   atualizadoEm DateTime @updatedAt
 }
 
-model Vilain {
+model Villain {
   id Int @id @default(autoincrement())
   nome String @db.VarChar(100)
   poderes String @db.Text
